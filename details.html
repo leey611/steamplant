@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="model.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "EB Garamond", serif;
+        }
+        model-viewer {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #text-container {
+            /* border: 1px solid red; */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 3rem 1rem;
+            position: absolute;
+            /* right: 0; */
+            z-index: 1;
+            pointer-events: none;
+            p {
+                text-align: center;
+                width: 50rem;
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container"><p id="model_text"></p></div>
+</body>
+</html>
